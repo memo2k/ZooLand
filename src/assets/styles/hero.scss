@@ -1,0 +1,16 @@
+/**
+* * Hero
+*/
+.hero {
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    position: relative;
+
+    .hero__inner {
+        position: absolute;
+        bottom: 300px;
+    }
+}

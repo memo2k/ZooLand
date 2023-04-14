@@ -1,0 +1,91 @@
+@import "header.scss";
+@import "hero.scss";
+
+/**
+* * Reset
+*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/** 
+* * Body
+*/
+body {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    color: #252525;
+    font-size: 18px;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #161616;
+    font-size: 19px;
+}
+
+img {
+    display: block;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+/**
+* * Shell
+*/
+.shell {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/**
+* * Nav
+*/
+.nav {
+    ul {
+        display: flex;
+    }
+
+    ul li + li {
+        margin-left: 20px;
+    }
+}
+
+/**
+* * Buttons
+*/
+.btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.btn--orange {
+    font-size: 22px;
+    background-color: #ecab55;
+    color: #fff;
+    border: none;
+}
+
+.btn--orange:hover {
+    background-color: #f5bb70;
+}

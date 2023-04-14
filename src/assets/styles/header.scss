@@ -1,0 +1,39 @@
+/**
+* * Header
+*/
+.header {
+    height: 160px;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+
+    .header__inner {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 110px;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 0 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .header__nav a {
+        color: #ecab55;
+        padding: 10px;
+        border-radius: 10px;
+        transition: .2s;
+    }
+
+    .header__nav a:hover {
+        background-color: #ecab55;
+        color: #fff;
+    }
+}
