@@ -1,0 +1,19 @@
+/**
+* * Welcome
+*/
+.section-welcome {
+    text-align: center;
+    padding-top: 100px;
+
+    .section-welcome__title {
+        margin-bottom: 34px;
+    }
+
+    .section-welcome__paragraph {
+        margin: 0 auto;
+        max-width: 1000px;
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 36px;
+    }
+}
