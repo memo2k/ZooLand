@@ -111,41 +111,43 @@ const Home = () => {
             </div>
 
             <table>
-              <tr>
+              <thead>
                 <th>Dates</th>
                 <th>Opening</th>
                 <th>Closing</th>
-              </tr>
+              </thead>
 
-              <tr>
-                <td>31 October 2022 - 10 February 2023</td>
-                <td>10:00</td>
-                <td>16:00</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>31 October 2022 - 10 February 2023</td>
+                  <td>10:00</td>
+                  <td>16:00</td>
+                </tr>
 
-              <tr>
-                <td>11 February 2023 - 25 March 2023</td>
-                <td>10:00</td>
-                <td>17:00</td>
-              </tr>
+                <tr>
+                  <td>11 February 2023 - 25 March 2023</td>
+                  <td>10:00</td>
+                  <td>17:00</td>
+                </tr>
 
-              <tr>
-                <td>26 March 2023 - 3 September 2023</td>
-                <td>10:00</td>
-                <td>18:00</td>
-              </tr>
+                <tr>
+                  <td>26 March 2023 - 3 September 2023</td>
+                  <td>10:00</td>
+                  <td>18:00</td>
+                </tr>
 
-              <tr>
-                <td>4 September 2023 - 29 October 2023</td>
-                <td>10:00</td>
-                <td>17:00</td>
-              </tr>
+                <tr>
+                  <td>4 September 2023 - 29 October 2023</td>
+                  <td>10:00</td>
+                  <td>17:00</td>
+                </tr>
 
-              <tr>
-                <td>30 October 2023 - 9 February 2024</td>
-                <td>10:00</td>
-                <td>16:00</td>
-              </tr>
+                <tr>
+                  <td>30 October 2023 - 9 February 2024</td>
+                  <td>10:00</td>
+                  <td>16:00</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
