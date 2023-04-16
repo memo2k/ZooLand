@@ -1,5 +1,10 @@
 import React from 'react';
 import heroImage from "../assets/images/hero.jpg";
+import ourWorkImage from "../assets/images/ourwork.jpg";
+import cardImage1 from "../assets/images/habitat.jpg";
+import cardImage2 from "../assets/images/animal.jpg";
+import cardImage3 from "../assets/images/events.jpg";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -30,6 +35,54 @@ const Home = () => {
             protecting their future and share incredible
             memories of our leaping, roaring, squawking natural world.
           </p>
+        </div>
+      </section>
+
+      <section className="section-cards">
+        <div className="shell">
+          <div className="grid">
+            <div className="grid__col grid__col--1of3">
+              <div className="card">
+                <Link to="/">
+                  <div className="card__image">
+                    <img src={cardImage1} alt="" />
+                  </div>
+
+                  <div className="card__title">
+                    <h3>Habitats</h3>
+                  </div>
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid__col grid__col--1of3">
+              <div className="card">
+                <Link to="/">
+                  <div className="card__image">
+                    <img src={cardImage2} alt="" />
+                  </div>
+
+                  <div className="card__title">
+                    <h3>Animals</h3>
+                  </div>
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid__col grid__col--1of3">
+              <div className="card">
+                <Link to="/">
+                  <div className="card__image">
+                    <img src={cardImage3} alt="" />
+                  </div>
+
+                  <div className="card__title">
+                    <h3>Upcoming Events</h3>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
