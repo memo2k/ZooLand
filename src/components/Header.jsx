@@ -24,11 +24,7 @@ const Header = () => {
               </li>
 
               <li>
-                <Link to="/">Become a Member</Link>
-              </li>
-
-              <li>
-                <Link to="/">About</Link>
+                <Link to="/">Membership</Link>
               </li>
             </ul>
           </nav>
