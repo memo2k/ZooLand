@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__nav">
+      <div className="footer__nav footer__links">
         <nav className="nav">
           <ul>
             <li>
@@ -30,7 +30,7 @@ const Footer = () => {
         </nav>
       </div>
 
-      <div className="footer__socials">
+      <div className="footer__nav footer__socials">
         <nav className="nav">
           <ul>
             <li>
@@ -49,7 +49,7 @@ const Footer = () => {
         </nav>
       </div>
 
-      <div className="footer__policy">
+      <div className="footer__nav footer__policy">
         <nav className="nav">
           <ul>
             <li>
