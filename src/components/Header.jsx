@@ -6,7 +6,6 @@ const Header = () => {
   const [hamburger, setHamburger] = useState("hamburger");
   const [ulClass, setUlClass] = useState("");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
-  const root = document.getElementById("root")
 
   const updateMenu = () => {
     if (!isMenuClicked) {
