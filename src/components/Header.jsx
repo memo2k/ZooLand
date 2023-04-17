@@ -1,8 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../assets/images/logo.png";
 
 const Header = () => {
+  const [hamburger, setHamburger] = useState("hamburger");
+  const [ulClass, setUlClass] = useState("");
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
+  const root = document.getElementById("root")
+
+  const updateMenu = () => {
+    if (!isMenuClicked) {
+      setHamburger("hamburger active");
+      setUlClass("active");
+      document.body.style.overflow = 'hidden';
+    } else {
+      setHamburger("hamburger");
+      setUlClass("");
+      document.body.style.overflow = 'unset';
+    }
+    setIsMenuClicked(!isMenuClicked);
+  }
+
   return (
     <header className="header">
       <div className="header__inner">
@@ -14,7 +32,7 @@ const Header = () => {
 
         <div className="header__nav">
           <nav className="nav">
-            <ul>
+            <ul className={ulClass}>
               <li>
                 <Link to="/">Plan Your Visit</Link>
               </li>
@@ -28,6 +46,12 @@ const Header = () => {
               </li>
             </ul>
           </nav>
+        </div>
+
+        <div className={hamburger} onClick={updateMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
         </div>
       </div>
     </header>
