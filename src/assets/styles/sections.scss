@@ -46,14 +46,14 @@
         right: 0;
         padding: 50px;
         font-size: 24px;
-        line-height: 36px;
     }
-
+    
     .section-our-work__title {
         margin-bottom: 15px;
     }
-
+    
     .section-our-work__paragraph {
+        line-height: 36px;
         margin-bottom: 40px;
     }
 }
@@ -99,14 +99,32 @@
         padding: 50px;
         font-size: 24px;
         letter-spacing: 1px;
-        line-height: 36px;
     }
-
+    
     .section-membership__title {
         margin-bottom: 15px;
     }
-
+    
     .section-membership__paragraph {
+        line-height: 36px;
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-our-work .section-our-work__box {
+        width: 100%;
+
+        .section-our-work__paragraph {
+            line-height: 28px;
+        }
+    }
+    
+    .section-membership .section-membership__box {
+        width: 100%;
+
+        .section-membership__paragraph {
+            line-height: 28px;
+        }
     }
 }
